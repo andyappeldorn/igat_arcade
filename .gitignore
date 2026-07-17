@@ -1,0 +1,5 @@
+# refer to gitignore in project
+_build/
+cmake/
+*.inx
+out/

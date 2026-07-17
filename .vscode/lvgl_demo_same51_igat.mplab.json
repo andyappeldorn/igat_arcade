@@ -1,0 +1,622 @@
+{
+    "version": "1.9",
+    "importedFrom": "igat.X",
+    "configurations": [
+        {
+            "name": "ili9488_rgb565_e51_igat",
+            "id": "conf1",
+            "device": "ATSAME51J20A",
+            "imageType": "application",
+            "imagePath": "./out/lvgl_demo_same51_igat/ili9488_rgb565_e51_igat.elf",
+            "toolProperties": "ili9488_rgb565_e51_igat-tool",
+            "tool": "PKOB nano",
+            "packs": [
+                {
+                    "name": "SAME51_DFP",
+                    "vendor": "Microchip",
+                    "version": "3.7.242"
+                },
+                {
+                    "name": "CMSIS",
+                    "vendor": "ARM",
+                    "version": "5.8.0"
+                }
+            ],
+            "fileSet": "Project files",
+            "toolchain": "ili9488_rgb565_e51_igat-XC32",
+            "includeLegacyMacros": true
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "ili9488_rgb565_e51_igat-XC32",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:xc32@5.10",
+            "properties": {
+                "compiler.additional-warnings": false,
+                "compiler.addresss-attribute-use": false,
+                "compiler.enable-app-io": false,
+                "compiler.enable-omit-frame-pointer": false,
+                "compiler.enable-symbols": true,
+                "compiler.enable-unroll-loops": false,
+                "compiler.exclude-floating-point": false,
+                "compiler.extra-include-directories": "src;src/config/ili9488_rgb565_e51_igat;src/packs/ATSAME51J20A_DFP;src/packs/CMSIS;src/packs/CMSIS/CMSIS/Core/Include;src/third_party/rtos/FreeRTOS/Source/include;src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F;igat.X",
+                "compiler.generate-16-bit-code": false,
+                "compiler.generate-micro-compressed-code": false,
+                "compiler.isolate-each-function": true,
+                "compiler.make-warnings-into-errors": false,
+                "compiler.optimization-level": "-O1",
+                "compiler.place-data-into-section": true,
+                "compiler.post-instruction-scheduling": "default",
+                "compiler.pre-instruction-scheduling": "default",
+                "compiler.strict-ansi": false,
+                "compiler.support-ansi": false,
+                "compiler.tentative-definitions": "-fno-common",
+                "compiler.use-cci": false,
+                "compiler.use-iar": false,
+                "compiler.use-indirect-calls": false,
+                "compiler++.additional-warnings": false,
+                "compiler++.addresss-attribute-use": false,
+                "compiler++.check-new": false,
+                "compiler++.eh-specs": true,
+                "compiler++.enable-app-io": false,
+                "compiler++.enable-omit-frame-pointer": false,
+                "compiler++.enable-symbols": true,
+                "compiler++.enable-unroll-loops": false,
+                "compiler++.exceptions": true,
+                "compiler++.exclude-floating-point": false,
+                "compiler++.extra-include-directories": "src;src/config/ili9488_rgb565_e51_igat;src/packs/ATSAME51J20A_DFP;src/packs/CMSIS;src/packs/CMSIS/CMSIS/Core/Include;src/third_party/rtos/FreeRTOS/Source/include;src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/ARM_CM4F;igat.X",
+                "compiler++.generate-16-bit-code": false,
+                "compiler++.generate-micro-compressed-code": false,
+                "compiler++.isolate-each-function": true,
+                "compiler++.make-warnings-into-errors": false,
+                "compiler++.optimization-level": "-O1",
+                "compiler++.place-data-into-section": false,
+                "compiler++.post-instruction-scheduling": "default",
+                "compiler++.pre-instruction-scheduling": "default",
+                "compiler++.rtti": true,
+                "compiler++.strict-ansi": false,
+                "compiler++.use-cci": false,
+                "compiler++.use-iar": false,
+                "compiler++.use-indirect-calls": false,
+                "assembler.enable-symbols": true,
+                "assembler.exclude-floating-point-library": false,
+                "assembler.expand-macros": false,
+                "assembler.extra-include-directories-for-assembler": "igat.X",
+                "assembler.extra-include-directories-for-preprocessor": "igat.X",
+                "assembler.false-conditionals": false,
+                "assembler.generate-16-bit-code": false,
+                "assembler.generate-micro-compressed-code": false,
+                "assembler.keep-locals": false,
+                "assembler.list-assembly": false,
+                "assembler.list-source": false,
+                "assembler.list-symbols": false,
+                "assembler.oXC32asm-list-to-file": false,
+                "assembler.omit-debug-dirs": false,
+                "assembler.omit-forms": false,
+                "archiver.additional-options-chop-files": false,
+                "linker.additional-options-use-response-files": false,
+                "linker.additional-options-write-sla": false,
+                "linker.allocate-dinit": false,
+                "linker.code-dinit": false,
+                "linker.enable-check-sections": false,
+                "linker.exclude-floating-point-library": false,
+                "linker.exclude-standard-libraries": false,
+                "linker.extra-lib-directories": "igat.X",
+                "linker.fill-flash-options-how": "0",
+                "linker.fill-flash-options-inc-const": "1",
+                "linker.fill-flash-options-what": "0",
+                "linker.generate-16-bit-code": false,
+                "linker.generate-cross-reference-file": false,
+                "linker.generate-micro-compressed-code": false,
+                "linker.heap-size": "512",
+                "linker.no-device-startup-code": true,
+                "linker.no-startup-files": false,
+                "linker.remove-unused-sections": true,
+                "linker.report-memory-usage": false,
+                "linker.warn-section-align": false,
+                "coverage.stack-guidance": false,
+                "global.legacy-libc": false,
+                "global.mstacktcm": false,
+                "global.omit-pack-options": "1",
+                "global.relaxed-math": false,
+                "global.save-temps": false,
+                "global.wpo-lto": false
+            }
+        },
+        {
+            "name": "ili9488_rgb565_e51_igat-tool",
+            "type": "tool",
+            "properties": {
+                "AutoSelectMemRanges": "auto",
+                "arm.use_vtor": false,
+                "arm.vtor_adr": "exception_table",
+                "communication.activationmode": "nohv",
+                "communication.interface": "swd",
+                "communication.speed": "2.000",
+                "debugoptions.debug-startup": "Use system settings",
+                "debugoptions.reset-behaviour": "Use system settings",
+                "debugoptions.useswbreakpoints": false,
+                "event.recorder.enabled": false,
+                "firmware.path": "Press to browse for a specific firmware version",
+                "firmware.toolpack": "Press to select which tool pack to use",
+                "firmware.update.action": "firmware.update.use.latest",
+                "freeze.timers": false,
+                "loader.board_file": "${ProjectDir}/board.xboard",
+                "memories.aux": false,
+                "memories.bootflash": true,
+                "memories.configurationmemory": true,
+                "memories.configurationmemory2": true,
+                "memories.dataflash": true,
+                "memories.eeprom": true,
+                "memories.exclude.configurationmemory": true,
+                "memories.flashdata": true,
+                "memories.id": true,
+                "memories.instruction.ram.ranges": "${memories.instruction.ram.ranges}",
+                "memories.programmemory": true,
+                "memories.programmemory.ranges": "0-fffff",
+                "memories.rww": true,
+                "poweroptions.powerenable": false,
+                "programmerToGoFilePath": "C:/HarmonyProjects/gfx_apps_sam_d5x_e5x/apps/lvgl_showcase/firmware/lvgl_sc_e51_igat.X/debug/ili9488_rgb565_e51_igat/lvgl_sc_e51_igat_ptg",
+                "programoptions.eraseb4program": true,
+                "programoptions.preservedataflash": false,
+                "programoptions.preservedataflash.ranges": "${memories.dataflash.default}",
+                "programoptions.preserveeeprom": false,
+                "programoptions.preserveprogramrange": false,
+                "programoptions.preserveuserid": false,
+                "programoptions.programuserotp": false,
+                "script.has_reset": true,
+                "script.log_level": "1",
+                "script.reset_delay": "0",
+                "script.show_output": false,
+                "toolpack.updateoptions": "toolpack.updateoptions.uselatestoolpack",
+                "toolpack.updateoptions.packversion": "Press to select which tool pack to use",
+                "x.erase.clearprot": true
+            }
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "Project files",
+            "files": [
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/driver/input/drv_touch_itd.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/qtm_acq_same54_0x000f_api.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/qtm_acq_same51_0x000f_api.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/qtm_common_components_api.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/qtm_touch_key_0x0002_api.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/qtm_freq_hop_auto_0x0004_api.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/touch.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/touch_api_ptc.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/qtm_surface_cs_0x0021_api.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/touch_example.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/ATSAME51J20A_DFP/same51j20a.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "igat.X/Makefile",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/driver/input/drv_touch_itd.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/gfx/driver/controller/external_controller/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/gfx/driver/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/gfx/interface/**/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/osal/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/adc/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/ccl/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/clock/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/cmcc/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/dmac/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/evsys/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/nvic/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/nvmctrl/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/port/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/rtc/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/peripheral/tc/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/system/**/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/ATSAME51J20A_DFP/component/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/ATSAME51J20A_DFP/instance/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/packs/ATSAME51J20A_DFP/pio/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/demos/stress/assets/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/stdio/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/*",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/*{.c,.csv,.h,.ld,.yml}",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/demos/benchmark/assets/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/demos/benchmark/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/demos/keypad_encoder/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/demos/music/assets/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/demos/music/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/demos/stress/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/demos/widgets/assets/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/demos/widgets/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/core/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/draw/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/draw/nxp_pxp/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/draw/nxp_vglite/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/draw/sdl/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/draw/stm32_dma2d/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/draw/sw/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/layouts/flex/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/layouts/grid/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/libs/bmp/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/libs/ffmpeg/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/libs/freetype/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/libs/fsdrv/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/libs/gif/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/libs/png/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/libs/qrcode/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/libs/rlottie/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/libs/sjpg/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/others/gridnav/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/others/monkey/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/others/snapshot/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/themes/basic/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/themes/default/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/themes/mono/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/animimg/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/calendar/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/chart/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/colorwheel/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/imgbtn/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/keyboard/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/led/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/list/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/menu/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/meter/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/msgbox/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/span/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/spinbox/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/spinner/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/tabview/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/tileview/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/extra/widgets/win/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/font/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/hal/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/misc/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "../../third_party/lvgl/src/widgets/*.c",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "igat.X/*.mc3",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/lib/qtm_acq_same51_0x000f.X.a",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/lib/qtm_touch_key_cm4_0x0002.X.a",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/lib/qtm_freq_hop_auto_cm4_0x0004.X.a",
+                    "encoding": "ISO-8859-1"
+                },
+                {
+                    "include": "src/config/ili9488_rgb565_e51_igat/touch/lib/qtm_surface_cs_cm4_0x0021.X.a",
+                    "encoding": "ISO-8859-1"
+                },
+                "src/game/game_common.h",
+                "src/game/splash_screen.h",
+                "src/game/splash_screen.c",
+                "src/game/breakout.h",
+                "src/game/breakout.c",
+                "src/game/space_invaders.h",
+                "src/game/space_invaders.c",
+                "src/game/touch_report.h",
+                "src/game/touch_report.c"
+            ]
+        }
+    ]
+}

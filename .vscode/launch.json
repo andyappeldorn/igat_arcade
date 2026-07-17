@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Debug",
+            "type": "mplab-core-da",
+            "request": "launch",
+            "project": "lvgl_demo_same51_igat",
+            "configuration": "ili9488_rgb565_e51_igat",
+            "stopOnEntry": true,
+            "preLaunchTask": "lvgl_demo_same51_igat: ili9488_rgb565_e51_igat - Build",
+            "program": "${workspaceFolder}/out/lvgl_demo_same51_igat/ili9488_rgb565_e51_igat.elf"
+        },
+        {
+            "name": "Debug (no build)",
+            "type": "mplab-core-da",
+            "request": "launch",
+            "project": "lvgl_demo_same51_igat",
+            "configuration": "ili9488_rgb565_e51_igat",
+            "stopOnEntry": true,
+            "program": "${workspaceFolder}/out/lvgl_demo_same51_igat/ili9488_rgb565_e51_igat.elf"
+        },
+        {
+            "name": "Program",
+            "type": "mplab-core-da",
+            "request": "launch",
+            "project": "lvgl_demo_same51_igat",
+            "configuration": "ili9488_rgb565_e51_igat",
+            "noDebug": true,
+            "preLaunchTask": "lvgl_demo_same51_igat: ili9488_rgb565_e51_igat - Build",
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/out/lvgl_demo_same51_igat/ili9488_rgb565_e51_igat.elf"
+        },
+        {
+            "name": "Program (no build)",
+            "type": "mplab-core-da",
+            "request": "launch",
+            "project": "lvgl_demo_same51_igat",
+            "configuration": "ili9488_rgb565_e51_igat",
+            "noDebug": true,
+            "stopOnEntry": false,
+            "program": "${workspaceFolder}/out/lvgl_demo_same51_igat/ili9488_rgb565_e51_igat.elf"
+        }
+    ]
+}

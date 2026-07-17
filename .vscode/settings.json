@@ -1,0 +1,14 @@
+{
+    "specstory.cloudSync.enabled": "never",
+    "memory-inspector.debugTypes": [
+        "arm-debugger",
+        "embedded-debug",
+        "gdb",
+        "mplab-core-da"
+    ],
+    "mplab.clangd.arguments": [
+        "--header-insertion=never"
+    ],
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\lvgl_demo_same51_igat\\ili9488_rgb565_e51_igat",
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-clangd.exe"
+}
